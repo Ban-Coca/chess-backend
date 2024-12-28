@@ -7,7 +7,6 @@ import io.github.cdimascio.dotenv.Dotenv;
 
 @SpringBootApplication
 public class ChessBackendApplication  {
-	
 	public static void main(String[] args) {
 		Dotenv dotenv = Dotenv.load();
 		System.setProperty("SPRING_DATASOURCE_URL", dotenv.get("SPRING_DATASOURCE_URL"));
